@@ -13,9 +13,13 @@ cd flutter
 
 Abra `index.html` no navegador. Os estilos principais e o comportamento do botão de demonstração estão no próprio arquivo.
 
-## Arquivos a completar
+## Verificações estáticas
 
-O HTML referencia `index.js` e `index.css`, mas esses arquivos não constam na árvore atual. O botão “Começar Agora” exibe uma mensagem de exemplo.
+Os estilos e o JavaScript da página ficam incorporados em `index.html`. O botão “Começar Agora” exibe uma mensagem de exemplo.
+
+O workflow usa Node.js 24 para conferir referências locais, IDs, fragmentos e sintaxe JavaScript, incluindo blocos inline. Ele não executa Flutter nem verifica o layout no navegador.
+
+## Aplicativo Flutter pendente
 
 Para retomar o objetivo Flutter, será necessário adicionar o projeto com seu `pubspec.yaml`, fontes em `lib/` e configurações das plataformas escolhidas. Não há comando `flutter run` reproduzível nesta cópia atual.
 
